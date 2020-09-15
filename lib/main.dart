@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_first_login_screen/font_style.dart';
 
 void main() {
   runApp(MyApp());
@@ -24,7 +25,13 @@ class MyApp extends StatelessWidget {
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text("My Fist Login Screen")
+                    Text('Masuk', style: mainHeader,),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 24.0),
+                      child: Text('Mulai untuk menentukan pilihan UKM mu', style: subHeader,),
+                    ),
+                    Image(image: AssetImage('assets/images/ic_login.png',),
+                    height: 250,)
                   ],
                 )
               ],
